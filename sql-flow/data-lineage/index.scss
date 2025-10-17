@@ -1,0 +1,122 @@
+:host {
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  #app {
+    width: 100%;
+    height: 100%;
+  }
+
+  #toolkit_group {
+    display: flex;
+    column-gap: 20px;
+    padding: 10px 20px;
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #e3e3e3;
+  }
+
+  .hr {
+    height: 1px;
+    background-color: #e3e3e3;
+  }
+
+  // --------------------------------------------------------------------------------------------------
+
+
+  .bg-container {
+    width: 100%;
+    height: calc(100% - 100px);
+    position: relative;
+    background-color: #dff0d8;
+    overflow: hidden;
+  }
+
+  #bg {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    padding: 20px;
+    background-color: #dff0d8;
+
+    ::ng-deep {
+      .pa {
+        position: absolute;
+      }
+
+      .col-group {
+        padding-left: 0;
+        margin-bottom: 0;
+        line-height: 1.2;
+      }
+
+      .col-group-item {
+        border: 1px solid #ddd;
+        position: relative;
+        display: block;
+      }
+
+      .panel-node {
+        width: auto;
+        display: inline-block;
+        /*margin: auto 1px;*/
+        /*行内文本太长后面的就省略*/
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+      }
+
+      .panel-node-origin {
+        border: 1px solid #91c051;
+        background-color: #91c051;
+      }
+
+      .panel-node-middle {
+        border: 1px solid #DFC6A8;
+        background-color: #DFC6A8;
+      }
+
+      .panel-node-union {
+        border: 1px solid #66ccff;
+        background-color: #66ccff;
+      }
+
+      .panel-node-rs {
+        border: 1px solid #ff9900;
+        background-color: #ff9900;
+      }
+
+      .table-header {
+        text-align: center;
+        padding: 1px 15px;
+        background-color: #91c051;
+        color: white;
+        font-size: 12px;
+
+        max-width: 150px;
+        word-break: break-all;
+        white-space: break-spaces;
+      }
+
+
+      .panel-node-list {
+        background-color: #fff;
+        padding: 1px 10px;
+        font-size: smaller;
+        /*行内文本太长后面的就省略*/
+        // text-overflow: ellipsis;
+        // overflow: hidden;
+        // white-space: nowrap;
+        max-width: 150px;
+        word-break: break-all;
+        white-space: break-spaces;
+      }
+
+      .panel-node-list:hover {
+        background-color: #faebd7
+      }
+    }
+  }
+
+
+}

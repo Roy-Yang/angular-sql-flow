@@ -1,0 +1,25 @@
+<div id="app">
+  <div id="toolkit_group">
+    <button type="button" class="btn btn-success" (click)="resetZoom()">{{'operate.reset.zoom' | translate}}</button>
+    <button type="button" class="btn btn-success" (click)="zoomIn()"> +</button>
+    <button type="button" class="btn btn-success" (click)="zoomOut()"> -</button>
+    <!-- <button type="button" class="btn btn-success" (click)="downloadPng()">download as png</button>
+    <button type="button" class="btn btn-success" (click)="downloadJson()">download as json</button> -->
+    <!-- <span class="btn btn-success">帮助：右键移动画布；鼠标移动到连线上有列名高亮</span> -->
+  </div>
+  
+  <div class="hr" style="margin: 20px 20px"></div>
+  
+  <div class="bg-container">
+    <div class="min-height data-lineage" 
+    id="bg" 
+    #bg
+    (contextmenu)="onContextMenu($event)"
+    (mousedown)="onMouseDown($event)"
+    (mousemove)="onMouseMove($event)"
+    (mouseleave)="onMouseLeave($event)"
+    (mouseup)="onMouseUp($event)">
+</div>
+  </div>
+  
+</div>
