@@ -5,8 +5,10 @@ Angular component that mimics SQL flow
 Use directly after import
 
 ## Code illustrate
+Initialization method
 
-`initDataLineage(id:string, mode: boolean`
+`initDataLineage(id:string, mode: boolean)`
+
 mode true will use local data
 
 mode false will use http data
